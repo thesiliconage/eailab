@@ -1,0 +1,176 @@
+---
+// Impact — How embodied AI affects humanity
+---
+
+<section class="section impact-section" id="impact">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label animate-on-scroll">Impact</div>
+      <h2 class="section-title animate-on-scroll">Shaping the Future</h2>
+      <p class="section-desc animate-on-progress">
+        Embodied AI is not just a technical challenge — it has profound implications for how we live, work, and age.
+      </p>
+    </div>
+
+    <div class="impact-grid">
+      <article class="impact-card glass-card animate-on-scroll">
+        <div class="impact-icon">🏥</div>
+        <h3>Healthcare & Eldercare</h3>
+        <p>Assistive robots can help an aging population with daily tasks, rehabilitation exercises, and companionship — extending independent living and easing caregiver burden in societies facing demographic shifts.</p>
+      </article>
+
+      <article class="impact-card glass-card animate-on-scroll">
+        <div class="impact-icon">🏭</div>
+        <h3>Manufacturing & Logistics</h3>
+        <p>Flexible, adaptive robots can handle small-batch production and unpredictable warehouse conditions — making automation accessible beyond large factories to small businesses and diverse supply chains.</p>
+      </article>
+
+      <article class="impact-card glass-card animate-on-scroll">
+        <div class="impact-icon">🌾</div>
+        <h3>Agriculture & Environment</h3>
+        <p>Autonomous agents can monitor crops, manage invasive species, and operate in hazardous environments — enabling precision agriculture and environmental monitoring at scales humans alone cannot achieve.</p>
+      </article>
+
+      <article class="impact-card glass-card animate-on-scroll">
+        <div class="impact-icon">🔬</div>
+        <h3>Scientific Discovery</h3>
+        <p>Robots that can manipulate lab equipment, run experiments, and explore extreme environments accelerate discovery in chemistry, biology, and space exploration — doing the work that is slow, dangerous, or impossible for humans.</p>
+      </article>
+
+      <article class="impact-card glass-card animate-on-scroll">
+        <div class="impact-icon">🏠</div>
+        <h3>Daily Life</h3>
+        <p>Household robots that cook, clean, and organize could reclaim hours of domestic labor — reshaping how people spend their time and enabling greater focus on creative, social, and professional pursuits.</p>
+      </article>
+
+      <article class="impact-card glass-card animate-on-scroll">
+        <div class="impact-icon">⚖️</div>
+        <h3>Challenges & Responsibility</h3>
+        <p>Embodied AI raises important questions about safety, employment, equity, and accountability. Building these systems responsibly — with human oversight and inclusive design — is as important as building them well.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- Quote -->
+<section class="section quote-section">
+  <div class="container">
+    <div class="quote-content">
+      <blockquote class="quote-block animate-on-scroll">
+        <p>"The next leap in AI will not come from bigger models alone, but from machines that learn through physical interaction — seeing, touching, and reasoning about the world as humans do."</p>
+        <footer>
+          <span class="quote-line"></span>
+          <span>EAI LAB</span>
+        </footer>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<style>
+  .impact-section {
+    background: var(--bg-secondary);
+  }
+
+  .section-header {
+    text-align: center;
+    max-width: 640px;
+    margin: 0 auto 3.5rem;
+  }
+
+  .section-header .section-label {
+    justify-content: center;
+  }
+
+  .section-header .section-label::before {
+    display: none;
+  }
+
+  .impact-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+  }
+
+  .impact-card {
+    padding: 1.75rem;
+    text-align: center;
+  }
+
+  .impact-icon {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    line-height: 1;
+  }
+
+  .impact-card h3 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin-bottom: 0.6rem;
+    color: var(--text);
+  }
+
+  .impact-card p {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    line-height: 1.7;
+  }
+
+  /* Quote */
+  .quote-section {
+    padding: 4rem 0;
+  }
+
+  .quote-content {
+    max-width: 780px;
+    margin: 0 auto;
+  }
+
+  .quote-block {
+    text-align: center;
+    padding: 3rem 2rem;
+    background: var(--bg-secondary);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius);
+  }
+
+  .quote-block p {
+    font-size: 1.1rem;
+    font-style: italic;
+    color: var(--text);
+    line-height: 1.8;
+    max-width: 640px;
+    margin: 0 auto;
+  }
+
+  .quote-block footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-top: 1.5rem;
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .quote-line {
+    width: 24px;
+    height: 2px;
+    background: var(--accent);
+    border-radius: 1px;
+  }
+
+  @media (max-width: 1024px) {
+    .impact-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  @media (max-width: 640px) {
+    .impact-grid { grid-template-columns: 1fr; }
+    .quote-block { padding: 2rem 1.25rem; }
+    .quote-block p { font-size: 1rem; }
+  }
+</style>

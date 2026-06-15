@@ -1,0 +1,111 @@
+---
+// Facilities — Lab equipment and testbeds
+---
+
+<section class="section facilities-section" id="facilities">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label animate-on-scroll">Facilities</div>
+      <h2 class="section-title animate-on-scroll">Where We Build</h2>
+      <p class="section-desc animate-on-scroll">
+        Our lab is equipped with industrial and research-grade platforms for real-world experimentation.
+      </p>
+    </div>
+
+    <div class="facilities-grid">
+      <div class="facility-card glass-card animate-on-scroll">
+        <div class="facility-icon">🦾</div>
+        <h3>Manipulation Lab</h3>
+        <p>Franka Panda arms, Allegro & Shadow Dexterous hands, force-torque sensors, and tactile skin arrays forfine manipulation research.</p>
+      </div>
+
+      <div class="facility-card glass-card animate-on-scroll">
+        <div class="facility-icon">🏗️</div>
+        <h3>Motion Arena</h3>
+        <p>200㎡ tracked space with Vicon motion capture, configurable obstacles, and rough terrain patches for locomotion and navigation experiments.</p>
+      </div>
+
+      <div class="facility-card glass-card animate-on-scroll">
+        <div class="facility-icon">🖥️</div>
+        <h3>Compute Cluster</h3>
+        <p>On-premise GPU cluster (8× A100) for large-scale simulation, policy training, and foundation model fine-tuning. Isaac Sim & MuJoCo ready.</p>
+      </div>
+
+      <div class="facility-card glass-card animate-on-scroll">
+        <div class="facility-icon">🤖</div>
+        <h3>Robot Fleet</h3>
+        <p>Unitree Go2 quadrupeds, custom mobile manipulators, and DJI drone platforms for multi-agent field experiments.</p>
+      </div>
+
+      <div class="facility-card glass-card animate-on-scroll">
+        <div class="facility-icon">📷</div>
+        <h3>Perception Studio</h3>
+        <p>Calibrated multi-camera rigs, LiDAR arrays, event cameras, and depth sensors for vision and multimodal perception research.</p>
+      </div>
+
+      <div class="facility-card glass-card animate-on-scroll">
+        <div class="facility-icon">🏭</div>
+        <h3>Industry TestBed</h3>
+        <p>Partner factory floor access for real-world deployment testing — assembly lines, warehouse logistics, and inspection scenarios.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .facilities-section {
+    background: var(--bg-secondary);
+  }
+
+  .section-header {
+    text-align: center;
+    max-width: 640px;
+    margin: 0 auto 3.5rem;
+  }
+
+  .section-header .section-label {
+    justify-content: center;
+  }
+
+  .section-header .section-label::before {
+    display: none;
+  }
+
+  .facilities-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+  }
+
+  .facility-card {
+    padding: 1.75rem;
+    text-align: center;
+  }
+
+  .facility-icon {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    line-height: 1;
+  }
+
+  .facility-card h3 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin-bottom: 0.6rem;
+    color: var(--text);
+  }
+
+  .facility-card p {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    line-height: 1.7;
+  }
+
+  @media (max-width: 1024px) {
+    .facilities-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  @media (max-width: 640px) {
+    .facilities-grid { grid-template-columns: 1fr; }
+  }
+</style>

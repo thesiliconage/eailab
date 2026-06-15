@@ -1,0 +1,144 @@
+---
+// What is Embodied AI — Introduction to the field
+---
+
+<section class="section" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-text">
+        <div class="section-label animate-on-scroll">About</div>
+        <h2 class="section-title animate-on-scroll">
+          What is Embodied AI?
+        </h2>
+        <p class="about-lead animate-on-scroll">
+          Traditional AI lives in the cloud — processing text, images, and data on servers far from the physical world. Embodied AI is different: it gives intelligence a body.
+        </p>
+        <p class="about-body animate-on-scroll">
+          An embodied agent perceives its surroundings through cameras, touch sensors, and proprioception. It builds internal models of the world, plans actions, and physically interacts with its environment. A robot arm assembling a component, a drone inspecting infrastructure, a household robot tidying a room — these are all embodied AI.
+        </p>
+        <p class="about-body animate-on-scroll">
+          The field draws from robotics, computer vision, natural language processing, reinforcement learning, and control theory. Its central question: <strong>how do we build machines that learn to act intelligently through physical experience?</strong>
+        </p>
+      </div>
+
+      <div class="about-features">
+        <div class="feature-card glass-card animate-on-scroll">
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M12 1v2m0 18v2M4.22 4.22l1.42 1.42m12.72 12.72 1.42 1.42M1 12h2m18 0h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+          </div>
+          <div>
+            <h3>Perception</h3>
+            <p>Machines must interpret raw sensory data — images, depth maps, tactile readings — into meaningful representations of the world.</p>
+          </div>
+        </div>
+
+        <div class="feature-card glass-card animate-on-scroll">
+          <div class="feature-icon feature-icon-purple">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          </div>
+          <div>
+            <h3>Reasoning</h3>
+            <p>Understanding cause and effect, planning multi-step actions, and predicting how the world will respond to interventions.</p>
+          </div>
+        </div>
+
+        <div class="feature-card glass-card animate-on-scroll">
+          <div class="feature-icon feature-icon-green">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <div>
+            <h3>Interaction</h3>
+            <p>Physically engaging with the world — grasping, pushing, assembling — and learning from the consequences of those actions.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: start;
+  }
+
+  .about-text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-lead {
+    font-size: 1.05rem;
+    color: var(--text);
+    line-height: 1.8;
+    margin-top: 1rem;
+  }
+
+  .about-body {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    line-height: 1.8;
+    margin-top: 0.75rem;
+  }
+
+  .about-body strong {
+    color: var(--accent);
+    font-weight: 600;
+  }
+
+  .about-features {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .feature-card {
+    display: flex;
+    gap: 1.25rem;
+    align-items: flex-start;
+    padding: 1.5rem;
+  }
+
+  .feature-icon {
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-sm);
+    background: var(--accent-dim);
+    color: var(--accent);
+  }
+
+  .feature-icon-purple {
+    background: var(--purple-dim);
+    color: var(--purple);
+  }
+
+  .feature-icon-green {
+    background: var(--green-dim);
+    color: var(--green);
+  }
+
+  .feature-card h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 0.35rem;
+  }
+
+  .feature-card p {
+    font-size: 0.88rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+  }
+
+  @media (max-width: 768px) {
+    .about-grid {
+      grid-template-columns: 1fr;
+      gap: 2.5rem;
+    }
+  }
+</style>

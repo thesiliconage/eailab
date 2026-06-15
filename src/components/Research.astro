@@ -1,0 +1,147 @@
+---
+// Research Directions — What embodied AI research covers
+---
+
+<section class="section" id="directions">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label animate-on-scroll">Research</div>
+      <h2 class="section-title animate-on-scroll">Research Directions</h2>
+      <p class="section-desc animate-on-scroll">
+        Embodied AI spans the full pipeline from perception to action. These are the core challenges our research addresses.
+      </p>
+    </div>
+
+    <div class="research-grid">
+      <article class="research-card glass-card animate-on-scroll">
+        <div class="card-header">
+          <span class="card-num">01</span>
+        </div>
+        <h3>Dexterous Manipulation</h3>
+        <p>How can robots grasp, reorient, and assemble objects with human-like finesse? This requires integrating tactile sensing, force feedback, and learned motor policies that generalize across object shapes and materials.</p>
+      </article>
+
+      <article class="research-card glass-card animate-on-scroll">
+        <div class="card-header">
+          <span class="card-num">02</span>
+        </div>
+        <h3>Autonomous Navigation</h3>
+        <p>Enabling machines to move through complex, unstructured environments — from cluttered indoor spaces to rough outdoor terrain — using multimodal perception and spatial reasoning.</p>
+      </article>
+
+      <article class="research-card glass-card animate-on-scroll">
+        <div class="card-header">
+          <span class="card-num">03</span>
+        </div>
+        <h3>Language-Guided Interaction</h3>
+        <p>Bridging natural language and physical action. Robots that understand instructions like "pick up the red cup" need to ground language in perception, context, and motor planning.</p>
+      </article>
+
+      <article class="research-card glass-card animate-on-scroll">
+        <div class="card-header">
+          <span class="card-num">04</span>
+        </div>
+        <h3>Sim-to-Real Transfer</h3>
+        <p>Training policies in simulation is fast and safe, but the real world is messy. Closing the "reality gap" — so simulated skills transfer to physical robots — is a central challenge.</p>
+      </article>
+
+      <article class="research-card glass-card animate-on-scroll">
+        <div class="card-header">
+          <span class="card-num">05</span>
+        </div>
+        <h3>Multi-Agent Coordination</h3>
+        <p>When multiple robots must cooperate — carrying objects together, covering terrain, or dividing tasks — they need communication, planning, and emergent coordination strategies.</p>
+      </article>
+
+      <article class="research-card glass-card animate-on-scroll">
+        <div class="card-header">
+          <span class="card-num">06</span>
+        </div>
+        <h3>Human-Robot Collaboration</h3>
+        <p>Robots that share space with people must predict human intent, respect safety boundaries, and adapt their behavior in real time — in factories, homes, and hospitals.</p>
+      </article>
+
+      <article class="research-card glass-card animate-on-scroll">
+        <div class="card-header">
+          <span class="card-num">07</span>
+        </div>
+        <h3>Intelligent Railway Systems</h3>
+        <p>Applying embodied AI to rail transit — autonomous track inspection, predictive maintenance through sensor fusion, obstacle detection, and intelligent dispatching for safer, more efficient railway operations.</p>
+      </article>
+
+      <article class="research-card glass-card animate-on-scroll">
+        <div class="card-header">
+          <span class="card-num">08</span>
+        </div>
+        <h3>Field Robotics in Extreme Environments</h3>
+        <p>Deploying embodied agents in environments hazardous to humans — underground tunnels, offshore platforms, disaster zones, and high-altitude infrastructure — where reliability and autonomy are critical.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<style>
+  .section-header {
+    text-align: center;
+    max-width: 640px;
+    margin: 0 auto 3.5rem;
+  }
+
+  .section-header .section-label {
+    justify-content: center;
+  }
+
+  .section-header .section-label::before {
+    display: none;
+  }
+
+  .research-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+  }
+
+  .research-card {
+    padding: 1.75rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .card-num {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: var(--accent);
+    letter-spacing: 0.08em;
+    opacity: 0.5;
+  }
+
+  .research-card h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0.6rem;
+    color: var(--text);
+  }
+
+  .research-card p {
+    font-size: 0.88rem;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    flex: 1;
+  }
+
+  @media (max-width: 1024px) {
+    .research-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  @media (max-width: 640px) {
+    .research-grid { grid-template-columns: 1fr; }
+  }
+</style>

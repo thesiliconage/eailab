@@ -1,0 +1,99 @@
+---
+// Publications — Featured papers
+---
+
+<section class="section" id="publications">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label animate-on-scroll">Publications</div>
+      <h2 class="section-title animate-on-scroll">Selected Publications</h2>
+      <p class="section-desc animate-on-scroll">
+        Recent papers from our lab published at top-tier robotics and AI venues.
+      </p>
+    </div>
+
+    <div class="pub-list">
+      <article class="pub-item glass-card animate-on-scroll">
+        <div class="pub-venue">RSS 2026</div>
+        <h3>Tactile-Driven Dexterous In-Hand Manipulation via Sim-to-Real RL with Domain Randomization</h3>
+        <p class="pub-authors">J. Chen, L. Wang, M. Rodriguez, Y. Zhang</p>
+      </article>
+
+      <article class="pub-item glass-card animate-on-scroll">
+        <div class="pub-venue">CoRL 2025</div>
+        <h3>Language-Grounded Navigation in Unstructured Outdoor Environments</h3>
+        <p class="pub-authors">A. Kim, S. Patel, R. Liu, D. Thompson</p>
+      </article>
+
+      <article class="pub-item glass-card animate-on-scroll">
+        <div class="pub-venue">ICRA 2026</div>
+        <h3>Multi-Agent Cooperative Transport with Learned Communication Protocols</h3>
+        <p class="pub-authors">F. Müller, K. Tanaka, P. O'Brien, L. Wang</p>
+      </article>
+
+      <article class="pub-item glass-card animate-on-scroll">
+        <div class="pub-venue">NeurIPS 2025</div>
+        <h3>World Models for Robotic Manipulation: Learning Dynamics from Interaction</h3>
+        <p class="pub-authors">Y. Zhang, J. Chen, M. Rodriguez</p>
+      </article>
+  </div>
+</section>
+
+<style>
+  .section-header {
+    text-align: center;
+    max-width: 640px;
+    margin: 0 auto 3.5rem;
+  }
+
+  .section-header .section-label {
+    justify-content: center;
+  }
+
+  .section-header .section-label::before {
+    display: none;
+  }
+
+  .pub-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .pub-item {
+    padding: 1.5rem 1.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  .pub-venue {
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    font-weight: 700;
+    color: var(--accent);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 0.25rem;
+  }
+
+  .pub-item h3 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--text);
+    line-height: 1.4;
+  }
+
+  .pub-authors {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin-bottom: 0;
+  }
+
+  @media (max-width: 640px) {
+    .pub-item { padding: 1.25rem; }
+    .pub-item h3 { font-size: 0.95rem; }
+  }
+</style>

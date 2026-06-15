@@ -1,0 +1,127 @@
+---
+// Footer — Clean light theme
+---
+
+<footer class="site-footer" id="contact">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <span class="logo-text">EAI<span class="logo-dot">LAB</span></span>
+        </div>
+        <p>A research center dedicated to building intelligent machines that learn through physical interaction — from manipulation to navigation.</p>
+      </div>
+
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <a href="#about">About</a>
+          <a href="#directions">Research</a>
+          <a href="#impact">Impact</a>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <a href="mailto:contact@mail.eailab.org">contact@mail.eailab.org</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© {new Date().getFullYear()} EAI LAB. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .site-footer {
+    position: relative;
+    z-index: 1;
+    padding: 4rem 0 0;
+    border-top: 1px solid var(--glass-border);
+    background: var(--bg-secondary);
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .footer-brand {
+    max-width: 360px;
+  }
+
+  .footer-logo {
+    display: flex;
+    align-items: center;
+    font-family: var(--font-body);
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: var(--text);
+    margin-bottom: 0.75rem;
+  }
+
+  .footer-logo .logo-dot {
+    color: var(--accent);
+    margin-left: 0.15em;
+  }
+
+  .footer-brand p {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    line-height: 1.7;
+  }
+
+  .footer-links {
+    display: flex;
+    gap: 4rem;
+  }
+
+  .footer-col h4 {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.75rem;
+  }
+
+  .footer-col a {
+    display: block;
+    font-size: 0.88rem;
+    color: var(--text-secondary);
+    padding: 0.25rem 0;
+    transition: color 0.2s;
+  }
+
+  .footer-col a:hover {
+    color: var(--accent);
+  }
+
+  .footer-bottom {
+    border-top: 1px solid var(--glass-border);
+    padding: 1.5rem 0;
+    text-align: center;
+  }
+
+  .footer-bottom p {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    font-family: var(--font-mono);
+  }
+
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+      gap: 2rem;
+    }
+    .footer-links { gap: 2.5rem; }
+  }
+
+  @media (max-width: 480px) {
+    .footer-links { flex-direction: column; gap: 1.5rem; }
+  }
+</style>
